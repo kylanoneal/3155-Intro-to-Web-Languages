@@ -1,0 +1,13 @@
+body {
+    background-color: palevioletred;
+    font-family: 'Brush Script MT', cursive;
+  }
+
+#main-title
+{
+  text-align: center;
+}
+
+.content {
+  margin-bottom: 12;
+}
