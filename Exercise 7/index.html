@@ -1,0 +1,32 @@
+<html>
+  <head>
+    <title>index.html</title> <!-- Appears in the tab at the top -->
+  </head>
+  <body>
+
+    <!-- Input tag of type text (text box), prompts user to enter their name -->
+    <input id="name-input" type="text" placeholder="Enter your name" />
+
+    <!--Button tag with text that says "Click Me" -->
+    <button id="my-button">Click Me</button>
+    
+    <!-- Indicate Javascript Code -->
+    <script>
+      /*Get button element by using its id, store into myButton*/
+      var myButton = document.querySelector('#my-button');
+      /*Get nameInput element by using its id, store into nameInput*/
+      var nameInput = document.querySelector('#name-input');
+    
+      /*Adds a click event for myButton and defines the function in the same place*/
+      myButton.addEventListener('click', function () {
+        /*Check to see if the user has inputted anything*/
+        if (nameInput.value !== '') {
+          /*If so, create a pop-up that says hello and whatever the user inputted*/
+          alert('Hello ' + nameInput.value);
+        }
+      });
+    </script>
+
+
+  </body>
+</html>
